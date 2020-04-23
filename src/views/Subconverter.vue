@@ -35,7 +35,7 @@
                     style="width: 100%"
                     v-model="form.customBackend"
                     :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://127.0.0.1:25500/sub?"
+                    placeholder="动动小手，（建议）自行搭建后端服务。例：https://sub.agwa.page/sub?"
                   >
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
@@ -218,20 +218,20 @@
 </template>
 
 <script>
-const project = "https://github.com/CareyWang/sub-web";
+const project = "https://github.com/AGWA5783/sub-web";
 const remoteConfigSample =
   "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_external_config.ini";
 const gayhubRelease = "https://github.com/tindy2013/subconverter/releases";
-const defaultBackend = "https://api.wcc.best/sub?";
-const shortUrlBackend = "https://api.suo.yt/short";
+const defaultBackend = "https://sub.agwa.page/sub?";
+const shortUrlBackend = "https://dlj.tf/short";
 const configUploadBackend = "https://api.wcc.best/config/upload";
-const tgBotLink = "https://t.me/CareyWong_bot";
+const tgBotLink = "https://t.me/AGWA5783";
 
 export default {
   data() {
     return {
       backendVersion: "",
-      advanced: "2",
+      advanced: "1",
 
       // 是否为 PC 端
       isPC: true,
@@ -243,73 +243,63 @@ export default {
           Surge2: "surge&ver=2",
           Surge3: "surge&ver=3",
           Surge4: "surge&ver=4",
+          Loon: "loon",
           Quantumult: "quan",
           QuantumultX: "quanx",
           Surfboard: "surfboard",
-          Loon: "loon",
-          ss: "ss",
-          ssr: "ssr",
-          ssd: "ssd"
+          SS: "ss",
+          SSR: "ssr",
+          SSD: "ssd"
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: "https://sub.agwa.page/sub?" }],
         remoteConfig: [
           {
-            label: "universal",
+            label: "Universal",
             options: [
               {
                 label: "No-Urltest",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/universal/no-urltest.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/universal/no-urltest.ini"
               },
               {
                 label: "Urltest",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/universal/urltest.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/universal/urltest.ini"
               }
             ]
           },
           {
-            label: "customized",
+            label: "Customized",
             options: [
-              {
-                label: "Maying",
-                value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/maying.ini"
-              },
               {
                 label: "rixCloud",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/rixcloud.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/rixcloud.ini"
+              },
+              {
+                label: "Maying",
+                value:
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/maying.ini"
               },
               {
                 label: "YoYu",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/yoyu.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/yoyu.ini"
               },
               {
-                label: "Ytoo",
+                label: "YToo",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/ytoo.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/ytoo.ini"
               },
               {
                 label: "NyanCAT",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/nyancat.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/nyancat.ini"
               },
               {
-                label: "Nexitally",
+                label: "便利店",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/nexitally.ini"
-              },
-              {
-                label: "贼船",
-                value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/zeichuan.ini"
-              },
-              {
-                label: "布丁",
-                value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/customized/pud.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/convenience.ini"
               }
             ]
           },
@@ -319,12 +309,7 @@ export default {
               {
                 label: "NeteaseUnblock(仅规则，No-Urltest)",
                 value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/special/netease.ini"
-              },
-              {
-                label: "Basic(仅GEOIP CN + Final)",
-                value:
-                  "https://raw.githubusercontent.com/CareyWang/Rules/master/RemoteConfig/special/basic.ini"
+                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/special/netease.ini"
               }
             ]
           }
@@ -375,7 +360,7 @@ export default {
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
-    this.form.clientType = "clash";
+    this.form.clientType = "surge&ver=4";
     this.notify();
     this.getBackendVersion();
   },
