@@ -284,7 +284,7 @@ export default {
               {
                 label: "YoYu",
                 value:
-                  "hhttps://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/yoyu.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/yoyu.ini"
               },
               {
                 label: "YToo",
