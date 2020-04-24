@@ -259,12 +259,12 @@ export default {
               {
                 label: "No-Urltest",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/universal/no-urltest.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/universal/no-urltest.ini"
               },
               {
                 label: "Urltest",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/universal/urltest.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/universal/urltest.ini"
               }
             ]
           },
@@ -274,32 +274,32 @@ export default {
               {
                 label: "rixCloud",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/rixcloud.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/rixcloud.ini"
               },
               {
                 label: "Maying",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/maying.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/maying.ini"
               },
               {
                 label: "YoYu",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/yoyu.ini"
+                  "hhttps://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/yoyu.ini"
               },
               {
                 label: "YToo",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/ytoo.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/ytoo.ini"
               },
               {
                 label: "NyanCAT",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/nyancat.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/nyancat.ini"
               },
               {
                 label: "便利店",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/customized/convenience.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/convenience.ini"
               }
             ]
           },
@@ -309,7 +309,7 @@ export default {
               {
                 label: "NeteaseUnblock(仅规则，No-Urltest)",
                 value:
-                  "https://raw.githubusercontent.com/AGWA5783/Rules/master/RemoteConfig/special/netease.ini"
+                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/special/netease.ini"
               }
             ]
           }
