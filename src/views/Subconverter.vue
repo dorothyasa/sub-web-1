@@ -259,12 +259,12 @@ export default {
               {
                 label: "No-Urltest",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/universal/no-urltest.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/universal/no-urltest.ini"
               },
               {
                 label: "Urltest",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/universal/urltest.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/universal/urltest.ini"
               }
             ]
           },
@@ -274,32 +274,32 @@ export default {
               {
                 label: "rixCloud",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/rixcloud.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/rixcloud.ini"
               },
               {
                 label: "Maying",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/maying.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/maying.ini"
               },
               {
                 label: "YoYu",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/yoyu.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/yoyu.ini"
               },
               {
                 label: "YToo",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/ytoo.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/ytoo.ini"
               },
               {
                 label: "NyanCAT",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/nyancat.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/nyancat.ini"
               },
               {
                 label: "便利店",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/customized/convenience.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/convenience.ini"
               }
             ]
           },
@@ -309,7 +309,7 @@ export default {
               {
                 label: "NeteaseUnblock(仅规则，No-Urltest)",
                 value:
-                  "https://subweb.s3-ap-northeast-1.amazonaws.com/RemoteConfig/special/netease.ini"
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/special/netease.ini"
               }
             ]
           }
