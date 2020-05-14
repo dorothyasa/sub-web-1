@@ -294,6 +294,11 @@ export default {
                   "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/nyancat.ini"
               },
               {
+                label: "SoCloud",
+                value:
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/socloud.ini"
+              },
+              {
                 label: "便利店",
                 value:
                   "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/customized/convenience.ini"
@@ -307,6 +312,11 @@ export default {
                 label: "NeteaseUnblock(仅规则，No-Urltest)",
                 value:
                   "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/special/netease.ini"
+              },
+              {
+                label: "PharosPro(仅规则，No-Urltest)",
+                value:
+                  "https://subweb.oss-cn-hongkong.aliyuncs.com/RemoteConfig/special/phaors.ini"
               }
             ]
           }
