@@ -104,7 +104,7 @@
                         <el-checkbox v-model="form.tpl.clash.doh" label="Clash.DoH"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.insert" label="网易云"></el-checkbox>
+                        <el-checkbox v-model="form.insert" label="网易云解锁"></el-checkbox>
                       </el-row>
                       <el-button slot="reference">定制功能</el-button>
                     </el-popover>
