@@ -80,6 +80,9 @@
                     </el-col>
                     <el-popover placement="bottom" v-model="form.extraset">
                       <el-row>
+                        <el-checkbox v-model="form.new_name" label="Clash New Field"></el-checkbox>
+                      </el-row>
+                      <el-row>
                         <el-checkbox v-model="form.udp" label="启用 UDP"></el-checkbox>
                       </el-row>
                       <el-row>
@@ -101,7 +104,7 @@
                         <el-checkbox v-model="form.tpl.clash.doh" label="Clash.DoH"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.insert" label="网易云解锁"></el-checkbox>
+                        <el-checkbox v-model="form.insert" label="网易云"></el-checkbox>
                       </el-row>
                       <el-button slot="reference">定制功能</el-button>
                     </el-popover>
@@ -339,7 +342,8 @@ export default {
         scv: false,
         fdn: false,
         appendType: false,
-        insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url 
+        insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
+        new_name: true, // 是否使用 Clash 新字段
 
         // tpl 定制功能
         tpl: {
@@ -429,8 +433,8 @@ export default {
         "target=" +
         this.form.clientType +
         "&url=" +
-        encodeURIComponent(sourceSub) + 
-        "&insert=" + 
+        encodeURIComponent(sourceSub) +
+        "&insert=" +
         this.form.insert;
 
       if (this.advanced === "2") {
@@ -474,8 +478,9 @@ export default {
         if (this.form.tpl.surge.doh === true) {
           this.customSubUrl += "&surge.doh=true";
         }
-        if (this.form.tpl.clash.doh === true) {
-          this.customSubUrl += "&clash.doh=true";
+
+        if (this.form.clientType === "clash") {
+          this.customSubUrl += "&new_name=" + this.form.new_name.toString();
         }
       }
 
@@ -594,7 +599,7 @@ export default {
           this.backendVersion = res.data.replace(/backend\n$/gm, "");
           this.backendVersion = this.backendVersion.replace("subconverter", "");
         });
-    },
+    }
   }
 };
 </script>
