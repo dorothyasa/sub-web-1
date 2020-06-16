@@ -225,7 +225,7 @@ const gayhubRelease = "https://github.com/tindy2013/subconverter/releases";
 const defaultBackend = "https://sub.agwa.page/sub?";
 const shortUrlBackend = "https://dlj.tf/short";
 const configUploadBackend = "https://api.wcc.best/config/upload";
-const tgBotLink = "https://t.me/AGWA5783";
+const tgBotLink = "https://t.me/AGWA5783_BOT";
 
 export default {
   data() {
