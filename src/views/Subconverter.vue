@@ -249,7 +249,8 @@ export default {
           Surfboard: "surfboard",
           SS: "ss",
           SSR: "ssr",
-          SSD: "ssd"
+          SSD: "ssd",
+          V2Ray: "v2ray"
         },
         backendOptions: [{ value: "https://sub.agwa.page/sub?" }],
         remoteConfig: [
