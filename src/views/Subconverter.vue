@@ -35,7 +35,7 @@
                     style="width: 100%"
                     v-model="form.customBackend"
                     :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：https://sub.agwa.page/sub?"
+                    placeholder="推荐的后端服务：https://sub.arc-cloud.site/sub?"
                   >
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
@@ -222,7 +222,7 @@ const project = "https://github.com/AGWA5783/sub-web";
 const remoteConfigSample =
   "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_external_config.ini";
 const gayhubRelease = "https://github.com/tindy2013/subconverter/releases";
-const defaultBackend = "https://sub.agwa.page/sub?";
+const defaultBackend = "https://sub.arc-cloud.site/sub?";
 const shortUrlBackend = "https://dlj.tf/short";
 const configUploadBackend = "https://api.wcc.best/config/upload";
 const tgBotLink = "https://t.me/AGWA5783_BOT";
@@ -252,7 +252,7 @@ export default {
           SSD: "ssd",
           V2Ray: "v2ray"
         },
-        backendOptions: [{ value: "https://sub.agwa.page/sub?" }],
+        backendOptions: [{ value: "https://sub.arc-cloud.site/sub?" }],
         remoteConfig: [
           {
             label: "Universal",
